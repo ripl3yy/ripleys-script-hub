@@ -1,3 +1,5 @@
+#!/bin/bash
+#set -e
 echo
 tput setaf 3
 echo "###############################################################################"
@@ -7,9 +9,10 @@ tput sgr0
 echo
 echo "Select which to install first."
 echo
-echo "1.  Packages via pacman"
-echo "2.  Packages via Flatpak"
-echo "3.  Clone wallpapers"
+echo "1. Packages via pacman"
+echo "2. Packages via Flatpak"
+echo "3. Clone wallpapers"
+echo "4. Install everything"
 echo
 echo "Type your selection. To exit, just close this window."
 echo
@@ -22,11 +25,11 @@ case $CHOICE in
 
     1 )
       echo
-      echo "##########################################"
-      echo "     Installing Programs via pacman     "
-      echo "##########################################"
-			sleep 3
-			sudo pacman -S --noconfirm xf86-video-amdgpu libvdpau-va-gl vulkan-swrast libva-vdpau-driver discord flatpak-kcm discover packagekit-qt5 flatpak
+      echo "########################################"
+      echo "     Installing packages via pacman     "
+      echo "########################################"
+			sleep 2
+			sudo pacman -S --noconfirm xf86-video-amdgpu libvdpau-va-gl vulkan-swrast libva-vdpau-driver discord flatpak-kcm discover packagekit-qt5 flatpak steam
 			sleep 3
       echo "#######################################"
       echo "                 Done!                 "
@@ -36,31 +39,57 @@ case $CHOICE in
 
     2 )
       echo
-      echo "##########################################"
-      echo "    Installing Programs via Flatpak     "
-      echo "##########################################"
+      echo "#########################################"
+      echo "     Installing packages via Flatpak     "
+      echo "#########################################"
+            sleep 2
+            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify com.microsoft.Edge
             sleep 3
-            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify
-            sleep 3
-      echo "#######################################"
-      echo "                 Done!                 "
-      echo "#######################################"
+      echo "##########################################"
+      echo "       Done! Rebooting system now         "
+      echo "##########################################"
+            reboot
             exit
         ;;
 
-    4 )
+    3 )
       echo
       echo "##########################################"
       echo "           Cloning Wallpapers             "
       echo "##########################################"
-			sleep 3
-			git clone https://github.com/ripl3yy/arch-stuff
-			sleep 3
-      echo "#######################################"
-      echo "                 Done!                 "
-      echo "#######################################"
+			sleep .5
+			git clone https://github.com/ripl3yy/wallpapers
+			sleep .5
+			mv ~/wallpapers ~/Pictures
+			sleep .5
+			rm -rf ~/Pictures/wallpapers/README.md
+      echo "########################################"
+      echo "   Done! Use Dolphin to set wallpaper   "
+      echo "########################################"
             exit
 
+      ;;
+
+          4 )
+      echo
+      echo "##############################################"
+      echo "  Installing packages and getting wallpapers  "
+      echo "##############################################"
+			sleep 3
+			sudo pacman -S --noconfirm xf86-video-ati vulkan-radeon lib32-vulkan-radeon libvdpau-va-gl vulkan-swrast libva-vdpau-driver discord flatpak-kcm discover packagekit-qt5 flatpak steam
+			sleep 3
+			git clone https://github.com/ripl3yy/wallpapers
+			sleep .5
+			mv ~/wallpapers ~/Pictures
+			sleep .5
+			rm -rf ~/Pictures/wallpapers/README.md
+			sleep 2
+			flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify com.microsoft.Edge
+			sleep 3
+      echo "#######################################################"
+      echo "  Done! Use Dolphin to set wallpaper & restart system  "
+      echo "#######################################################"
+            exit
       ;;
 esac
 done
