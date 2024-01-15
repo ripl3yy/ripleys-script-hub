@@ -28,9 +28,9 @@ case $CHOICE in
       echo "########################################"
       echo "     Installing packages via pacman     "
       echo "########################################"
-			sleep 2
+			sleep .5
 			sudo pacman -S --noconfirm xf86-video-amdgpu libvdpau-va-gl vulkan-swrast libva-vdpau-driver discord flatpak-kcm discover packagekit-qt5 flatpak steam btop
-			sleep 3
+			sleep 1
       echo "#######################################"
       echo "                 Done!                 "
       echo "#######################################"
@@ -42,9 +42,9 @@ case $CHOICE in
       echo "#########################################"
       echo "     Installing packages via Flatpak     "
       echo "#########################################"
-            sleep 2
+            sleep .5
             flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify com.microsoft.Edge
-            sleep 3
+            sleep 1
       echo "##########################################"
       echo "       Done! Rebooting system now         "
       echo "##########################################"
@@ -98,9 +98,9 @@ case $CHOICE in
       echo "##############################################"
       echo "  Installing packages and getting wallpapers  "
       echo "##############################################"
-			sleep 3
+			sleep .5
 			sudo pacman -S --noconfirm xf86-video-ati vulkan-radeon lib32-vulkan-radeon libvdpau-va-gl vulkan-swrast libva-vdpau-driver discord flatpak-kcm discover packagekit-qt5 flatpak steam btop
-			sleep 3
+			sleep 1
 			git clone https://github.com/ripl3yy/wallpapers
 			sleep .5
 			mv ~/wallpapers ~/Pictures
@@ -114,9 +114,9 @@ case $CHOICE in
 			fi
 			sleep 2
 			echo "eval \"\$(starship init bash)\"" >> ~/.bashrc
-			sleep 3
+			sleep 1
 			flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify com.microsoft.Edge
-			sleep 3
+			sleep 1
       echo "#####################################################################"
       echo "  Done! Restart system and find wallpapers in your Pictures folder!  "
       echo "#####################################################################"
