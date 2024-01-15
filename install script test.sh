@@ -57,15 +57,17 @@ case $CHOICE in
       echo "##########################################"
       echo "           Cloning Wallpapers             "
       echo "##########################################"
+			sleep 1
+			cd ~
 			sleep .5
 			git clone https://github.com/ripl3yy/wallpapers
 			sleep .5
 			mv ~/wallpapers ~/Pictures
 			sleep .5
 			rm -rf ~/Pictures/wallpapers/README.md
-      echo "########################################"
-      echo "   Done! Use Dolphin to set wallpaper   "
-      echo "########################################"
+      echo "#######################################################"
+      echo "   Done! Set wallpaper via settings or file manager!   "
+      echo "#######################################################"
             exit
 
       ;;
@@ -86,9 +88,9 @@ case $CHOICE in
 			sleep 2
 			flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify com.microsoft.Edge
 			sleep 3
-      echo "#######################################################"
-      echo "  Done! Use Dolphin to set wallpaper & restart system  "
-      echo "#######################################################"
+      echo "######################################################################"
+      echo "  Done! Set wallpaper via settings or file manager & restart system!  "
+      echo "######################################################################"
             exit
       ;;
 esac
