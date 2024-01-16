@@ -43,7 +43,7 @@ case $CHOICE in
       echo "     Installing packages via Flatpak     "
       echo "#########################################"
             sleep .5
-            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify com.microsoft.Edge md.obsidian.Obsidian com.heroicgameslauncher.hgl
+            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify md.obsidian.Obsidian com.heroicgameslauncher.hgl
             sleep 1
       echo "###########################################"
       echo "  Done! Make sure to restart your system!  "
@@ -114,7 +114,7 @@ case $CHOICE in
 			sleep 2
 			echo "eval \"\$(starship init bash)\"" >> ~/.bashrc
 			sleep 1
-			flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify com.microsoft.Edge md.obsidian.Obsidian com.heroicgameslauncher.hgl
+			flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify md.obsidian.Obsidian com.heroicgameslauncher.hgl
 			sleep 1
       echo "#####################################################################"
       echo "  Done! Restart system and find wallpapers in your Pictures folder!  "
