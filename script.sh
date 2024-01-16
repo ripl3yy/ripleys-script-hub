@@ -29,6 +29,8 @@ case $CHOICE in
       echo "     Installing packages via pacman     "
       echo "########################################"
 			sleep .5
+      sudo pacman -Syyu
+      sleep 2
 			sudo pacman -S --noconfirm xf86-video-amdgpu libvdpau-va-gl vulkan-swrast libva-vdpau-driver discord flatpak-kcm discover packagekit-qt5 flatpak steam btop
 			sleep 1
       echo "###########################################"
@@ -98,6 +100,8 @@ case $CHOICE in
       echo "  Installing packages, getting wallpapers, setting up Starship  "
       echo "################################################################"
 			sleep .5
+      sudo pacman -Syyu
+      sleep 2
 			sudo pacman -S --noconfirm xf86-video-ati vulkan-radeon lib32-vulkan-radeon libvdpau-va-gl vulkan-swrast libva-vdpau-driver discord flatpak-kcm discover packagekit-qt5 flatpak steam btop
 			sleep 1
 			git clone https://github.com/ripl3yy/wallpapers
