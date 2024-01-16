@@ -28,6 +28,7 @@ If you are running an Nvidia GPU (GTX 900 series onward), replace the AMD driver
 - Flatpak (enables the ability to install Flatpak from terminal)
 - Steam
 - btop
+- neofetch
 
 ### Installed via Flatpak
 
