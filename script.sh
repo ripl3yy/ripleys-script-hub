@@ -2,9 +2,9 @@
 #set -e
 echo
 tput setaf 3
-echo "###############################################################################"
-echo "#                       Ripley's Easy Arch Script (REAS)                      #"
-echo "###############################################################################"
+echo "################################################"
+echo "#       Ripley's Easy Arch Script (REAS)       #"
+echo "################################################"
 tput sgr0
 echo
 echo "Select which to install first."
@@ -12,7 +12,7 @@ echo
 echo "1. Packages via pacman"
 echo "2. Packages via Flatpak"
 echo "3. Clone wallpapers"
-echo "4. Install everything"
+echo "4. All of the above (primarily for fresh Arch installs)"
 echo
 echo "Type your selection. To exit, just close this window or press Ctrl + C."
 echo
@@ -31,9 +31,9 @@ case $CHOICE in
 			sleep .5
 			sudo pacman -S --noconfirm xf86-video-amdgpu libvdpau-va-gl vulkan-swrast libva-vdpau-driver discord flatpak-kcm discover packagekit-qt5 flatpak steam btop
 			sleep 1
-      echo "#######################################"
-      echo "                 Done!                 "
-      echo "#######################################"
+      echo "###########################################"
+      echo "  Done! Make sure to restart your system!  "
+      echo "###########################################"
             exit
         ;;
 
@@ -45,9 +45,9 @@ case $CHOICE in
             sleep .5
             flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify com.microsoft.Edge md.obsidian.Obsidian com.heroicgameslauncher.hgl
             sleep 1
-      echo "##########################################"
-      echo "       Done! Rebooting system now         "
-      echo "##########################################"
+      echo "###########################################"
+      echo "  Done! Make sure to restart your system!  "
+      echo "###########################################"
             reboot
             exit
         ;;
