@@ -34,7 +34,6 @@ If you are running an Nvidia GPU (GTX 900 series onward), replace the AMD driver
 - [Spotify](https://flathub.org/apps/com.spotify.Client)
 - [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal)
 - [Planify](https://flathub.org/apps/io.github.alainm23.planify) (genuinely one of my favorite applications, I highly suggest checking it out)
-- [Microsoft Edge](https://flathub.org/apps/com.microsoft.Edge) (waiting for the 'ew microsoft edge' comments lol)
 - [Obsidian](https://flathub.org/apps/md.obsidian.Obsidian) (if you don't know about obsidian, watch [this](https://www.youtube.com/watch?v=DbsAQSIKQXk))
 - [Heroic Games Launcher](https://flathub.org/apps/com.heroicgameslauncher.hgl)
 ## Before you run the script:
