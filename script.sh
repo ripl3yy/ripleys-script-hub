@@ -43,7 +43,7 @@ case $CHOICE in
       echo "     Installing packages via Flatpak     "
       echo "#########################################"
             sleep .5
-            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify com.microsoft.Edge
+            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify com.microsoft.Edge md.obsidian.Obsidian com.heroicgameslauncher.hgl
             sleep 1
       echo "##########################################"
       echo "       Done! Rebooting system now         "
@@ -95,9 +95,9 @@ case $CHOICE in
 
           5 )
       echo
-      echo "##############################################"
-      echo "  Installing packages and getting wallpapers  "
-      echo "##############################################"
+      echo "################################################################"
+      echo "  Installing packages, getting wallpapers, setting up Starship  "
+      echo "################################################################"
 			sleep .5
 			sudo pacman -S --noconfirm xf86-video-ati vulkan-radeon lib32-vulkan-radeon libvdpau-va-gl vulkan-swrast libva-vdpau-driver discord flatpak-kcm discover packagekit-qt5 flatpak steam btop
 			sleep 1
@@ -115,7 +115,7 @@ case $CHOICE in
 			sleep 2
 			echo "eval \"\$(starship init bash)\"" >> ~/.bashrc
 			sleep 1
-			flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify com.microsoft.Edge
+			flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify com.microsoft.Edge md.obsidian.Obsidian com.heroicgameslauncher.hgl
 			sleep 1
       echo "#####################################################################"
       echo "  Done! Restart system and find wallpapers in your Pictures folder!  "

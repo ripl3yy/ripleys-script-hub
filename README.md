@@ -14,6 +14,8 @@ If the pacman installer fails, you might need to have the `multilib` repo enable
 If there is anything I can do to help improve my script or if there is anything that you think I should add to it, please let me know! Either make a pull request or contact me on Discord (_ripl3y) and I'll get back to you as soon as I can!
 
 ⚠️ A quick note for those running GNOME, installing Discover **will** install various other KDE applications. To avoid this, please open the script in Text Editor (Gnome's default text editor) and remove `discover packagekit-qt5` from **lines 32 and 102**. This will save your system from being filled with KDE bloat.
+
+If you are running an Nvidia GPU (GTX 900 series onward), replace the AMD driver packages on **lines 32 and 102** with the following: `nvidia-dkms-tkg nvidia-utils-tkg nvidia-settings-tkg nvidia-egl-wayland-tkg opencl-nvidia-tkg libxnvctrl lib32-libxnvctrl lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg`. This will install everything needed in regards to Nvidia cards.
 ## Packages installed
 
 ### Installed via pacman
@@ -33,6 +35,8 @@ If there is anything I can do to help improve my script or if there is anything 
 - [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal)
 - [Planify](https://flathub.org/apps/io.github.alainm23.planify) (genuinely one of my favorite applications, I highly suggest checking it out)
 - [Microsoft Edge](https://flathub.org/apps/com.microsoft.Edge) (waiting for the 'ew microsoft edge' comments lol)
+- [Obsidian](https://flathub.org/apps/md.obsidian.Obsidian) (if you don't know about obsidian, watch [this](https://www.youtube.com/watch?v=DbsAQSIKQXk))
+- [Heroic Games Launcher](https://flathub.org/apps/com.heroicgameslauncher.hgl)
 ## Before you run the script:
 
 Make sure you have git installed (skip if already installed)
