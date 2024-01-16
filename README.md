@@ -1,0 +1,63 @@
+
+# Ripley's Easy Arch Script (REAS)
+
+Hello! Welcome to my post-install script! This is a personal project of mine that I created to help ease the process of getting my Arch install up and going a little quicker. This isn't a script to install Arch entirely, but just something that installs my daily programs from pacman and Flatpak, installs and sets up the [Starship](https://starship.rs/) prompt, and downloads all of my wallpapers for me.
+
+I am very new to bash scripting and Linux in general, so if my code is messy, I do apologize! I'm still learning and figuring things out! But, I can assure you that the script does work as intended!
+
+I've made sure to make this script as easy to customize as possible. I know not everyone uses the exact same set of applications I do, which is why I made it the way it is. Below, I'll leave a list of what is installed.
+
+For new Arch users, I've left a guide below with the commands needed to run the script. All commands there are just copy and paste!
+
+If the pacman installer fails, you might need to have the `multilib` repo enabled. You can follow this guide [here](https://wiki.archlinux.org/title/Official_repositories#Enabling_multilib).
+
+If there is anything I can do to help improve my script or if there is anything that you think I should add to it, please let me know! Either make a pull request or contact me on Discord (_ripl3y) and I'll get back to you as soon as I can!
+## Packages installed
+
+### Installed via pacman
+
+- AMD drivers (xf86-video-amdgpu libvdpau-va-gl vulkan-swrast libva-vdpau-driver)
+- Discord
+- flatpak-kcm
+- Discover (GUI frontend for Flatpak and Arch repos)
+- packagekit-qt5
+- Flatpak (enables the ability to install Flatpak from terminal)
+- Steam
+- btop
+
+### Installed via Flatpak
+
+- [Spotify](https://flathub.org/apps/com.spotify.Client)
+- [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal)
+- [Planify](https://flathub.org/apps/io.github.alainm23.planify) (genuinely one of my favorite applications, I highly suggest checking it out)
+- [Microsoft Edge](https://flathub.org/apps/com.microsoft.Edge) (waiting for the 'ew microsoft edge' comments lol)
+## Before you run the script:
+
+Make sure you have git installed (skip if already installed)
+
+```bash
+  sudo pacman -S git
+```
+
+Clone this repository
+
+```bash
+  git clone https://github.com/ripl3yy/ripleys-easy-arch-script
+```
+
+cd into the folder
+
+```bash
+  cd ripleys-easy-arch-script/
+```
+
+Make the script executable
+
+```bash
+  sudo chmod u+x script.sh
+```
+Run the script!
+
+```bash
+  ./script.sh
+```
