@@ -37,12 +37,17 @@ If you are running an Nvidia GPU (GTX 900 series onward), replace the AMD driver
 - [Planify](https://flathub.org/apps/io.github.alainm23.planify) (genuinely one of my favorite applications, I highly suggest checking it out)
 - [Obsidian](https://flathub.org/apps/md.obsidian.Obsidian) (if you don't know about obsidian, watch [this](https://www.youtube.com/watch?v=DbsAQSIKQXk))
 - [Heroic Games Launcher](https://flathub.org/apps/com.heroicgameslauncher.hgl)
+- [Video Downloader](https://flathub.org/apps/com.github.unrud.VideoDownloader)
+- [Kdenlive](https://flathub.org/apps/org.kde.kdenlive)
+- [OBS Studio](https://flathub.org/apps/com.obsproject.Studio)
+- [Vinegar](https://flathub.org/apps/org.vinegarhq.Vinegar)
+- [ProtonUp-Qt](https://flathub.org/apps/net.davidotek.pupgui2)
 ## Before you run the script:
 
 Make sure you have git installed (skip if already installed)
 
 ```bash
-  sudo pacman -S git
+  sudo pacman -S --needed git
 ```
 
 Clone this repository
