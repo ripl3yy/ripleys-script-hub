@@ -48,7 +48,6 @@ case $CHOICE in
       echo "###########################################"
       echo "  Done! Make sure to restart your system!  "
       echo "###########################################"
-            reboot
             exit
         ;;
 
