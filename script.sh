@@ -1,6 +1,17 @@
 #!/bin/bash
 #set -e
 echo
+echo "########################"
+echo "    Checking for git    "
+echo "########################"
+      sleep 1
+      sudo pacman -S --needed git
+      sleep 1
+echo "################################"
+echo "  Done! Running the next step.  "
+echo "################################"
+      sleep 3
+echo
 tput setaf 3
 echo "################################################"
 echo "#       Ripley's Easy Arch Script (REAS)       #"
@@ -13,7 +24,8 @@ echo "1. Packages via pacman"
 echo "2. Packages via Flatpak"
 echo "3. Clone wallpapers"
 echo "4. Install Starship prompt"
-echo "5. All of the above (primarily for fresh Arch installs)"
+echo "5. Install yay."
+echo "6. All of the above (primarily for fresh Arch installs)"
 echo
 echo "Type your selection. To exit, just close this window or press Ctrl + C."
 echo
@@ -46,7 +58,7 @@ case $CHOICE in
       echo "     Installing packages via Flatpak     "
       echo "#########################################"
             sleep .5
-            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify md.obsidian.Obsidian com.heroicgameslauncher.hgl
+            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify md.obsidian.Obsidian com.heroicgameslauncher.hgl com.github.unrud.VideoDownloader org.kde.kdenlive com.obsproject.Studio org.vinegarhq.Vinegar net.davidotek.pupgui2
             sleep 1
       echo "###########################################"
       echo "  Done! Make sure to restart your system!  "
@@ -60,9 +72,7 @@ case $CHOICE in
       echo "           Cloning Wallpapers             "
       echo "##########################################"
             sleep 1
-            cd ~
-            sleep .5
-            git clone https://github.com/ripl3yy/wallpapers
+            cd ~ && git clone https://github.com/ripl3yy/wallpapers
             sleep .5
             mv ~/wallpapers ~/Pictures
             sleep .5
@@ -94,8 +104,27 @@ case $CHOICE in
             exit
 
       ;;
-
+      
           5 )
+      echo
+      echo "######################"
+      echo "    Installing yay    "
+      echo "######################"
+            sleep 1
+            pacman -S --needed git base-devel
+            cd ~ && git clone https://aur.archlinux.org/yay.git
+            sleep 1
+            cd yay
+            makepkg -si
+            sleep 1
+      echo "######################################"
+      echo "   Done! Close terminal and reopen!   "
+      echo "######################################"
+            exit
+
+      ;;
+
+          6 )
       echo
       echo "################################################################"
       echo "  Installing packages, getting wallpapers, setting up Starship  "
@@ -105,7 +134,7 @@ case $CHOICE in
             sleep 2
             sudo pacman -S --noconfirm xf86-video-ati vulkan-radeon lib32-vulkan-radeon libvdpau-va-gl vulkan-swrast libva-vdpau-driver discord flatpak-kcm discover packagekit-qt5 flatpak steam btop neofetch
             sleep 1
-            git clone https://github.com/ripl3yy/wallpapers
+            cd ~ && git clone https://github.com/ripl3yy/wallpapers
             sleep .5
             mv ~/wallpapers ~/Pictures
             sleep .5
@@ -119,7 +148,13 @@ case $CHOICE in
             sleep 2
             echo "eval \"\$(starship init bash)\"" >> ~/.bashrc
             sleep 1
-            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify md.obsidian.Obsidian com.heroicgameslauncher.hgl
+            pacman -S --needed git base-devel
+            cd ~ && git clone https://aur.archlinux.org/yay.git
+            sleep 1
+            cd yay
+            makepkg -si
+            sleep 1
+            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify md.obsidian.Obsidian com.heroicgameslauncher.hgl com.github.unrud.VideoDownloader org.kde.kdenlive com.obsproject.Studio org.vinegarhq.Vinegar net.davidotek.pupgui2
             sleep 1
       echo "#####################################################################"
       echo "  Done! Restart system and find wallpapers in your Pictures folder!  "
