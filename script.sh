@@ -13,7 +13,7 @@ echo "1. Packages via pacman"
 echo "2. Packages via Flatpak"
 echo "3. Clone wallpapers"
 echo "4. Install Starship prompt"
-echo "4. All of the above (primarily for fresh Arch installs)"
+echo "5. All of the above (primarily for fresh Arch installs)"
 echo
 echo "Type your selection. To exit, just close this window or press Ctrl + C."
 echo
