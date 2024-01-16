@@ -3,7 +3,7 @@
 echo
 tput setaf 3
 echo "###############################################################################"
-echo "#                      Ripley's Post-Install Arch Script                      #"
+echo "#                       Ripley's Easy Arch Script (REAS)                      #"
 echo "###############################################################################"
 tput sgr0
 echo
