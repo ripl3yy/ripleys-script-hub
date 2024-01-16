@@ -32,7 +32,7 @@ case $CHOICE in
             sleep .5
             sudo pacman -Syyu
             sleep 2
-            sudo pacman -S --noconfirm xf86-video-amdgpu libvdpau-va-gl vulkan-swrast libva-vdpau-driver discord flatpak-kcm discover packagekit-qt5 flatpak steam btop
+            sudo pacman -S --noconfirm xf86-video-amdgpu libvdpau-va-gl vulkan-swrast libva-vdpau-driver discord flatpak-kcm discover packagekit-qt5 flatpak steam btop neofetch
             sleep 1
       echo "###########################################"
       echo "  Done! Make sure to restart your system!  "
@@ -103,7 +103,7 @@ case $CHOICE in
             sleep .5
             sudo pacman -Syyu
             sleep 2
-            sudo pacman -S --noconfirm xf86-video-ati vulkan-radeon lib32-vulkan-radeon libvdpau-va-gl vulkan-swrast libva-vdpau-driver discord flatpak-kcm discover packagekit-qt5 flatpak steam btop
+            sudo pacman -S --noconfirm xf86-video-ati vulkan-radeon lib32-vulkan-radeon libvdpau-va-gl vulkan-swrast libva-vdpau-driver discord flatpak-kcm discover packagekit-qt5 flatpak steam btop neofetch
             sleep 1
             git clone https://github.com/ripl3yy/wallpapers
             sleep .5
