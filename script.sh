@@ -14,7 +14,7 @@ echo "2. Packages via Flatpak"
 echo "3. Clone wallpapers"
 echo "4. Install everything"
 echo
-echo "Type your selection. To exit, just close this window."
+echo "Type your selection. To exit, just close this window or press Ctrl + C."
 echo
 
 while :; do
@@ -65,9 +65,9 @@ case $CHOICE in
 			mv ~/wallpapers ~/Pictures
 			sleep .5
 			rm -rf ~/Pictures/wallpapers/README.md
-      echo "#######################################################"
-      echo "   Done! Set wallpaper via settings or file manager!   "
-      echo "#######################################################"
+      echo "############################################################"
+      echo "   Done! Wallpapers can be found in your Pictures folder!   "
+      echo "############################################################"
             exit
 
       ;;
