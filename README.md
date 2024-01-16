@@ -11,7 +11,7 @@ For new Arch users, I've left a guide below with the commands needed to run the 
 
 If the pacman installer fails, you might need to have the `multilib` repo enabled. You can follow this guide [here](https://wiki.archlinux.org/title/Official_repositories#Enabling_multilib).
 
-A quick note for those running GNOME, installing Discover **will** install various other KDE applications. To avoid this, please open the script in Text Editor (Gnome's default text editor) and remove `discover packagekit-qt5` from **lines 32 and 102**.
+⚠️ A quick note for those running GNOME, installing Discover **will** install various other KDE applications. To avoid this, please open the script in Text Editor (Gnome's default text editor) and remove `discover packagekit-qt5` from **lines 32 and 102**. This will save your system from being filled with KDE bloat.
 
 If there is anything I can do to help improve my script or if there is anything that you think I should add to it, please let me know! Either make a pull request or contact me on Discord (_ripl3y) and I'll get back to you as soon as I can!
 ## Packages installed
