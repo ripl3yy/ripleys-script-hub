@@ -13,9 +13,9 @@ If the pacman installer fails, you might need to have the `multilib` repo enable
 
 If there is anything I can do to help improve my script or if there is anything that you think I should add to it, please let me know! Either make a pull request or contact me on Discord (_ripl3y) and I'll get back to you as soon as I can!
 
-⚠️ A quick note for those running GNOME, installing Discover **will** install various other KDE applications. To avoid this, please open the script in Text Editor (Gnome's default text editor) and remove `discover packagekit-qt5` from **lines 32 and 102**. This will save your system from being filled with KDE bloat.
+⚠️ A quick note for those running GNOME, installing Discover **will** install various other KDE applications. To avoid this, please open the script in Text Editor (Gnome's default text editor) and remove `discover packagekit-qt5` from **lines 47 and 135**. This will save your system from being filled with KDE bloat.
 
-If you are running an Nvidia GPU (GTX 900 series onward), replace the AMD driver packages on **lines 32 and 102** with the following: `nvidia-open-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader`. This will install everything needed in regards to Nvidia cards. I am working on another script to help with installing Nvidia drivers, but it won't be available for a little bit!
+If you are running an Nvidia GPU (GTX 900 series onward), replace the AMD driver packages on **lines 47 and 135** with the following: `nvidia-open-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader`. This will install everything needed in regards to Nvidia cards. I am working on another script to help with installing Nvidia drivers, but it won't be available for a little bit!
 ## Packages installed
 
 ### Installed via pacman
