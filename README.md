@@ -15,7 +15,7 @@ If there is anything I can do to help improve my script or if there is anything 
 
 ⚠️ A quick note for those running GNOME, installing Discover **will** install various other KDE applications. To avoid this, please open the script in Text Editor (Gnome's default text editor) and remove `discover packagekit-qt5` from **lines 32 and 102**. This will save your system from being filled with KDE bloat.
 
-If you are running an Nvidia GPU (GTX 900 series onward), replace the AMD driver packages on **lines 32 and 102** with the following: `nvidia-dkms-tkg nvidia-utils-tkg nvidia-settings-tkg nvidia-egl-wayland-tkg opencl-nvidia-tkg libxnvctrl lib32-libxnvctrl lib32-nvidia-utils-tkg lib32-opencl-nvidia-tkg`. This will install everything needed in regards to Nvidia cards. I am working on another script to help with installing Nvidia drivers, but it won't be available for a little bit!
+If you are running an Nvidia GPU (GTX 900 series onward), replace the AMD driver packages on **lines 32 and 102** with the following: `nvidia-open-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader`. This will install everything needed in regards to Nvidia cards. I am working on another script to help with installing Nvidia drivers, but it won't be available for a little bit!
 ## Packages installed
 
 ### Installed via pacman
