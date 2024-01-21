@@ -58,7 +58,7 @@ case $CHOICE in
       echo "     Installing packages via Flatpak     "
       echo "#########################################"
             sleep .5
-            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify md.obsidian.Obsidian com.heroicgameslauncher.hgl com.github.unrud.VideoDownloader org.kde.kdenlive com.obsproject.Studio org.vinegarhq.Vinegar net.davidotek.pupgui2
+            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify md.obsidian.Obsidian com.heroicgameslauncher.hgl com.github.unrud.VideoDownloader org.kde.kdenlive com.obsproject.Studio org.vinegarhq.Vinegar net.davidotek.pupgui2 net.agalwood.Motrix
             sleep 1
       echo "###########################################"
       echo "  Done! Make sure to restart your system!  "
@@ -154,7 +154,7 @@ case $CHOICE in
             cd yay
             makepkg -si
             sleep 1
-            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify md.obsidian.Obsidian com.heroicgameslauncher.hgl com.github.unrud.VideoDownloader org.kde.kdenlive com.obsproject.Studio org.vinegarhq.Vinegar net.davidotek.pupgui2
+            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify md.obsidian.Obsidian com.heroicgameslauncher.hgl com.github.unrud.VideoDownloader org.kde.kdenlive com.obsproject.Studio org.vinegarhq.Vinegar net.davidotek.pupgui2 net.agalwood.Motrix
             sleep 1
       echo "#####################################################################"
       echo "  Done! Restart system and find wallpapers in your Pictures folder!  "
