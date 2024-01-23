@@ -38,8 +38,6 @@ If you are running an Nvidia GPU (GTX 900 series onward), replace the AMD driver
 - [Obsidian](https://flathub.org/apps/md.obsidian.Obsidian) (if you don't know about obsidian, watch [this](https://www.youtube.com/watch?v=DbsAQSIKQXk))
 - [Heroic Games Launcher](https://flathub.org/apps/com.heroicgameslauncher.hgl)
 - [Video Downloader](https://flathub.org/apps/com.github.unrud.VideoDownloader)
-- [Kdenlive](https://flathub.org/apps/org.kde.kdenlive)
-- [OBS Studio](https://flathub.org/apps/com.obsproject.Studio)
 - [Vinegar](https://flathub.org/apps/org.vinegarhq.Vinegar)
 - [ProtonUp-Qt](https://flathub.org/apps/net.davidotek.pupgui2)
 - [Motrix](https://flathub.org/apps/net.agalwood.Motrix)
