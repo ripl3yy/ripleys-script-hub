@@ -40,7 +40,6 @@ If you are running an Nvidia GPU (GTX 900 series onward), replace the AMD driver
 - [Video Downloader](https://flathub.org/apps/com.github.unrud.VideoDownloader)
 - [Vinegar](https://flathub.org/apps/org.vinegarhq.Vinegar)
 - [ProtonUp-Qt](https://flathub.org/apps/net.davidotek.pupgui2)
-- [Motrix](https://flathub.org/apps/net.agalwood.Motrix)
 ## Before you run the script:
 
 Make sure you have git installed (skip if already installed)
