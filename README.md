@@ -17,7 +17,7 @@ If there is anything I can do to help improve my script or if there is anything 
 
 ## Info about the driver installer script
 
-*Work in progress!*
+*Work in progress! A driver install script will be available soon*
 
 ## Packages installed
 
