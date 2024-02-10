@@ -15,12 +15,14 @@ If there is anything I can do to help improve my script or if there is anything 
 
 ⚠️ A quick note for those running GNOME, installing Discover **will** install various other KDE applications. To avoid this, please open the script in Text Editor (Gnome's default text editor) and remove `discover packagekit-qt5` from **lines 47 and 135**. This will save your system from being filled with KDE bloat.
 
-If you are running an Nvidia GPU (GTX 900 series onward), replace the AMD driver packages on **lines 47 and 135** with the following: `nvidia-open-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader`. This will install everything needed in regards to Nvidia cards. I am working on another script to help with installing Nvidia drivers, but it won't be available for a little bit!
+## Info about the driver installer script
+
+*Work in progress!*
+
 ## Packages installed
 
 ### Installed via pacman
 
-- AMD drivers (xf86-video-amdgpu libvdpau-va-gl vulkan-swrast libva-vdpau-driver)
 - Discord
 - flatpak-kcm
 - Discover (GUI frontend for Flatpak and Arch repos)
@@ -40,9 +42,10 @@ If you are running an Nvidia GPU (GTX 900 series onward), replace the AMD driver
 - [Video Downloader](https://flathub.org/apps/com.github.unrud.VideoDownloader)
 - [Vinegar](https://flathub.org/apps/org.vinegarhq.Vinegar)
 - [ProtonUp-Qt](https://flathub.org/apps/net.davidotek.pupgui2)
+- [Motrix](https://flathub.org/apps/net.agalwood.Motrix)
 ## Before you run the script:
 
-Make sure you have git installed (skip if already installed)
+Make sure you have git installed (automatically skipped if already installed)
 
 ```bash
   sudo pacman -S --needed git
@@ -60,12 +63,12 @@ cd into the folder
   cd ripleys-easy-arch-script/
 ```
 
-Make the script executable
+Make the script executable (if installing drivers, replace script.sh with drivers.sh)
 
 ```bash
   sudo chmod u+x script.sh
 ```
-Run the script!
+Run the script! (if using the driver install script, replace script.sh with drivers.sh)
 
 ```bash
   ./script.sh
