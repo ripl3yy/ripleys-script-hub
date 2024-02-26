@@ -44,7 +44,7 @@ case $CHOICE in
             sleep .5
             sudo pacman -Syyu
             sleep 2
-            sudo pacman -S --noconfirm discord flatpak-kcm discover packagekit-qt5 flatpak steam btop neofetch
+            sudo pacman -S --noconfirm discord flatpak-kcm discover packagekit-qt5 flatpak steam btop neofetch xdg-desktop-portal ffmpegthumbs
             sleep 1
       echo "###########################################"
       echo "  Done! Make sure to restart your system!  "
@@ -58,7 +58,7 @@ case $CHOICE in
       echo "     Installing packages via Flatpak     "
       echo "#########################################"
             sleep .5
-            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify md.obsidian.Obsidian com.heroicgameslauncher.hgl com.github.unrud.VideoDownloader org.vinegarhq.Vinegar net.davidotek.pupgui2
+            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify com.heroicgameslauncher.hgl com.github.unrud.VideoDownloader org.vinegarhq.Vinegar net.davidotek.pupgui2 io.mrarm.mcpelauncher com.mojang.Minecraft com.obsproject.Studio
             sleep 1
       echo "###########################################"
       echo "  Done! Make sure to restart your system!  "
@@ -132,7 +132,7 @@ case $CHOICE in
             sleep .5
             sudo pacman -Syyu
             sleep 2
-            sudo pacman -S --noconfirm discord flatpak-kcm discover packagekit-qt5 flatpak steam btop neofetch
+            sudo pacman -S --noconfirm discord flatpak-kcm discover packagekit-qt5 flatpak steam btop neofetch xdg-desktop-portal-gtk ffmpegthumbs kdenlive
             sleep 1
             cd ~ && git clone https://github.com/ripl3yy/wallpapers
             sleep .5
@@ -148,13 +148,7 @@ case $CHOICE in
             sleep 2
             echo "eval \"\$(starship init bash)\"" >> ~/.bashrc
             sleep 1
-            pacman -S --needed git base-devel
-            cd ~ && git clone https://aur.archlinux.org/yay.git
-            sleep 1
-            cd yay
-            makepkg -si
-            sleep 1
-            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify md.obsidian.Obsidian com.heroicgameslauncher.hgl com.github.unrud.VideoDownloader org.vinegarhq.Vinegar net.davidotek.pupgui2
+            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify com.heroicgameslauncher.hgl com.github.unrud.VideoDownloader org.vinegarhq.Vinegar net.davidotek.pupgui2 io.mrarm.mcpelauncher com.mojang.Minecraft com.obsproject.Studio
             sleep 1
       echo "#####################################################################"
       echo "  Done! Restart system and find wallpapers in your Pictures folder!  "
