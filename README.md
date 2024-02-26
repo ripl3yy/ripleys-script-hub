@@ -31,18 +31,23 @@ If there is anything I can do to help improve my script or if there is anything 
 - Steam
 - btop
 - neofetch
+- xdg-desktop-portal-gtk (allows flatpaks to open links in a browser)
+- ffmpegthumbs (video thumbnails in dolphin)
+- kdenlive
 
 ### Installed via Flatpak
 
 - [Spotify](https://flathub.org/apps/com.spotify.Client)
 - [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal)
 - [Planify](https://flathub.org/apps/io.github.alainm23.planify) (genuinely one of my favorite applications, I highly suggest checking it out)
-- [Obsidian](https://flathub.org/apps/md.obsidian.Obsidian) (if you don't know about obsidian, watch [this](https://www.youtube.com/watch?v=DbsAQSIKQXk))
 - [Heroic Games Launcher](https://flathub.org/apps/com.heroicgameslauncher.hgl)
 - [Video Downloader](https://flathub.org/apps/com.github.unrud.VideoDownloader)
 - [Vinegar](https://flathub.org/apps/org.vinegarhq.Vinegar)
 - [ProtonUp-Qt](https://flathub.org/apps/net.davidotek.pupgui2)
 - [Motrix](https://flathub.org/apps/net.agalwood.Motrix)
+- [OBS Studio](https://flathub.org/apps/com.obsproject.Studio)
+- [Minecraft Bedrock Launcher](https://flathub.org/apps/io.mrarm.mcpelauncher)
+- [Minecraft Launcher (java)](https://flathub.org/apps/com.mojang.Minecraft)
 ## Before you run the script:
 
 Make sure you have git installed (automatically skipped if already installed)
