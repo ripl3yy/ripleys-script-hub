@@ -64,7 +64,7 @@ select driver in "AMD" "Nvidia" "Quit"; do
     case $driver in
         AMD)
             echo "Select your Linux distribution:"
-            select distro in "Debian" "Arch" "OpenSUSE Tumbleweed" "Fedora" "Quit"; do
+            select distro in "Debian" "Arch" "OpenSUSE Tumbleweed" "Quit"; do
                 case $distro in
                     "Debian")
                         install_amd_debian
