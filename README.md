@@ -19,7 +19,7 @@ If there is anything I can do to help improve my script or if there is anything 
 
 This is still a **major** work in progress. But, in it's current state, it is working and does install accordingly. I tried to make it as user-friendly as possible with support for those on AMD/Nvidia cards on either Debian, Arch, and OpenSUSE systems. Fedora is coming soon, I just haven't fully figured out the packages for it yet.
 
-If there are any errors in which packages to install, please **submit a poll request!** Everything I had pulled from for everything was either the ["Installing Drivers guide from the Lutris team"](https://github.com/lutris/docs/blob/master/InstallingDrivers.md) or the wiki pages for their respective distro.
+If there are any errors in which packages to install, please **submit a pull request!** Everything I had pulled from for everything was either the ["Installing Drivers guide from the Lutris team"](https://github.com/lutris/docs/blob/master/InstallingDrivers.md) or the wiki pages for their respective distro.
 
 ## Packages installed
 
@@ -48,7 +48,7 @@ If there are any errors in which packages to install, please **submit a poll req
 - [OBS Studio](https://flathub.org/apps/com.obsproject.Studio)
 - [Minecraft Bedrock Launcher](https://flathub.org/apps/io.mrarm.mcpelauncher)
 ## Before you run the script:
-### If running the driver script, replace `script.sh` with `install_drivers.sh`!
+### ℹ️ If running the driver script, replace `script.sh` with `install_drivers.sh`!
 
 Make sure you have git installed (automatically skipped if already installed)
 
