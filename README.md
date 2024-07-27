@@ -59,13 +59,13 @@ Make sure you have git installed (automatically skipped if already installed)
 Clone this repository
 
 ```bash
-  git clone https://github.com/ripl3yy/ripleys-easy-arch-script
+  git clone https://github.com/ripl3yy/ripleys-script-hub
 ```
 
 cd into the folder
 
 ```bash
-  cd ripleys-easy-arch-script/
+  cd ripleys-script-hub/
 ```
 
 Make the script executable (if installing drivers, replace script.sh with drivers.sh)
