@@ -1,5 +1,3 @@
-## Packages installed
-
 ### Installed via pacman
 
 - Discord
