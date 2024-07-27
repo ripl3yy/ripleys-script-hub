@@ -1,5 +1,5 @@
 
-# Ripley's Easy Arch Script (REAS)
+# Ripley's Easy Arch Script (REAS) + Ripley's Easy Drivers (RED)
 
 Hello! Welcome to my post-install script! This is a personal project of mine that I created to help ease the process of getting my Arch install up and going a little quicker. **This isn't a script to install Arch entirely**, this is just something that installs my daily programs from pacman and Flatpak, installs and sets up the [Starship](https://starship.rs/) prompt, and downloads all of my wallpapers for me.
 
