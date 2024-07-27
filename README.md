@@ -9,6 +9,8 @@ I am very new to bash scripting and Linux in general, so if my code is messy, I 
 
 **This isn't a script to install Arch entirely**, this is just something that installs my daily programs from pacman and Flatpak, installs and sets up the [Starship](https://starship.rs/) prompt, and downloads all of my wallpapers for me.
 
+If you're interested in what packages and Flatpaks are installed, you can [check them here](https://github.com/ripl3yy/ripleys-script-hub/blob/main/package%20list/InstalledPkgs.md).
+
 I've made sure to make this script as easy to customize as possible. I know not everyone uses the exact same set of applications I do, which is why I made it the way it is. Below, I'll leave a list of what is installed. A quick reminder that this script does **NOT** install a web browser. If you're using something arch-based, such as Manjaro, EndeavourOS, etc. then you will already have Firefox preinstalled. If you're running vanilla Arch, a simple `sudo pacman -S firefox` will install Firefox to your system.
 
 If the pacman installer fails, you might need to have the `multilib` repo enabled. You can follow this guide [here](https://wiki.archlinux.org/title/Official_repositories#Enabling_multilib).
