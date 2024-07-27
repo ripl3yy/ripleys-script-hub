@@ -48,6 +48,7 @@ If there are any errors in which packages to install, please **submit a poll req
 - [OBS Studio](https://flathub.org/apps/com.obsproject.Studio)
 - [Minecraft Bedrock Launcher](https://flathub.org/apps/io.mrarm.mcpelauncher)
 ## Before you run the script:
+### If running the driver script, replace `script.sh` with `install_drivers.sh`!
 
 Make sure you have git installed (automatically skipped if already installed)
 
