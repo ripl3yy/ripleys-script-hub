@@ -54,7 +54,7 @@ select driver in "AMD" "Nvidia" "Quit"; do
     case $driver in
         AMD)
             echo "Select your Linux distribution:"
-            select distro in "Debian-based" "Arch-based" "OpenSUSE-based" "Quit"; do
+            select distro in "Debian-based" "Arch-based" "OpenSUSE Tumbleweed" "Quit"; do
                 case $distro in
                     "Debian-based")
                         install_amd_debian
@@ -64,7 +64,7 @@ select driver in "AMD" "Nvidia" "Quit"; do
                         install_amd_arch
                         break
                         ;;
-                    "OpenSUSE-based")
+                    "OpenSUSE Tumbleweed")
                         install_amd_opensuse
                         break
                         ;;
@@ -80,7 +80,7 @@ select driver in "AMD" "Nvidia" "Quit"; do
             ;;
         Nvidia)
             echo "Select your Linux distribution:"
-            select distro in "Debian-based" "Arch-based" "OpenSUSE-based" "Quit"; do
+            select distro in "Debian-based" "Arch-based" "OpenSUSE Tumbleweed" "Quit"; do
                 case $distro in
                     "Debian-based")
                         install_nvidia_debian
