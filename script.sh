@@ -1,5 +1,6 @@
 #!/bin/bash
 #set -e
+
 echo
 echo "########################"
 echo "    Checking for git    "
@@ -20,8 +21,8 @@ tput sgr0
 echo
 echo "Select which to install first."
 echo
-echo "1. Packages via pacman"
-echo "2. Packages via Flatpak"
+echo "1. Essential packages via pacman"
+echo "2. Essential packages via Flatpak"
 echo "3. Clone wallpapers"
 echo "4. Install Starship prompt"
 echo "5. Install yay."
@@ -58,7 +59,7 @@ case $CHOICE in
       echo "     Installing packages via Flatpak     "
       echo "#########################################"
             sleep .5
-            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify com.heroicgameslauncher.hgl com.github.unrud.VideoDownloader org.vinegarhq.Vinegar net.davidotek.pupgui2 io.mrarm.mcpelauncher com.mojang.Minecraft com.obsproject.Studio
+            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal com.heroicgameslauncher.hgl com.github.unrud.VideoDownloader org.vinegarhq.Vinegar net.davidotek.pupgui2 io.mrarm.mcpelauncher com.obsproject.Studio
             sleep 1
       echo "###########################################"
       echo "  Done! Make sure to restart your system!  "
@@ -148,7 +149,7 @@ case $CHOICE in
             sleep 2
             echo "eval \"\$(starship init bash)\"" >> ~/.bashrc
             sleep 1
-            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal io.github.alainm23.planify com.heroicgameslauncher.hgl com.github.unrud.VideoDownloader org.vinegarhq.Vinegar net.davidotek.pupgui2 io.mrarm.mcpelauncher com.mojang.Minecraft com.obsproject.Studio
+            flatpak install flathub com.spotify.Client com.github.tchx84.Flatseal com.heroicgameslauncher.hgl com.github.unrud.VideoDownloader net.davidotek.pupgui2 io.mrarm.mcpelauncher com.obsproject.Studio
             sleep 1
       echo "#####################################################################"
       echo "  Done! Restart system and find wallpapers in your Pictures folder!  "
