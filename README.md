@@ -1,7 +1,7 @@
 
 # Ripley's Easy Arch Script (REAS)
 
-Hello! Welcome to my post-install script! This is a personal project of mine that I created to help ease the process of getting my Arch install up and going a little quicker. **This isn't a script to install Arch entirely**, but just something that installs my daily programs from pacman and Flatpak, installs and sets up the [Starship](https://starship.rs/) prompt, and downloads all of my wallpapers for me.
+Hello! Welcome to my post-install script! This is a personal project of mine that I created to help ease the process of getting my Arch install up and going a little quicker. **This isn't a script to install Arch entirely**, this is just something that installs my daily programs from pacman and Flatpak, installs and sets up the [Starship](https://starship.rs/) prompt, and downloads all of my wallpapers for me.
 
 I am very new to bash scripting and Linux in general, so if my code is messy, I do apologize! I'm still learning and figuring things out! But, I can assure you that the script does work as intended!
 
@@ -13,11 +13,13 @@ If the pacman installer fails, you might need to have the `multilib` repo enable
 
 If there is anything I can do to help improve my script or if there is anything that you think I should add to it, please let me know! Either make a pull request or contact me on Discord (_ripl3y) and I'll get back to you as soon as I can!
 
-⚠️ A quick note for those running GNOME, installing Discover **will** install various other KDE applications. To avoid this, please open the script in Text Editor (Gnome's default text editor) and remove `discover packagekit-qt5` from **lines 47 and 135**. This will save your system from being filled with KDE bloat.
+⚠️ A quick note for those running GNOME, installing Discover **will** install various other KDE applications. To avoid this, please open the script in Text Editor (Gnome's default text editor) and remove `discover packagekit-qt5` from **lines 48 and 136**. This will save your system from being filled with KDE bloat.
 
 ## Info about the driver installer script
 
-*Work in progress! A driver install script will be available soon*
+This is still a **major** work in progress. But, in it's current state, it is working and does install accordingly. I tried to make it as user-friendly as possible with support for those on AMD/Nvidia cards on either Debian, Arch, and OpenSUSE systems. Fedora is coming soon, I just haven't fully figured out the packages for it yet.
+
+If there are any errors in which packages to install, please **submit a poll request!** Everything I had pulled from for everything was either the ["Installing Drivers guide from the Lutris team"](https://github.com/lutris/docs/blob/master/InstallingDrivers.md) or the wiki pages for their respective distro.
 
 ## Packages installed
 
@@ -39,15 +41,12 @@ If there is anything I can do to help improve my script or if there is anything 
 
 - [Spotify](https://flathub.org/apps/com.spotify.Client)
 - [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal)
-- [Planify](https://flathub.org/apps/io.github.alainm23.planify) (genuinely one of my favorite applications, I highly suggest checking it out)
 - [Heroic Games Launcher](https://flathub.org/apps/com.heroicgameslauncher.hgl)
 - [Video Downloader](https://flathub.org/apps/com.github.unrud.VideoDownloader)
-- [Vinegar](https://flathub.org/apps/org.vinegarhq.Vinegar)
 - [ProtonUp-Qt](https://flathub.org/apps/net.davidotek.pupgui2)
 - [Motrix](https://flathub.org/apps/net.agalwood.Motrix)
 - [OBS Studio](https://flathub.org/apps/com.obsproject.Studio)
 - [Minecraft Bedrock Launcher](https://flathub.org/apps/io.mrarm.mcpelauncher)
-- [Minecraft Launcher (java)](https://flathub.org/apps/com.mojang.Minecraft)
 ## Before you run the script:
 
 Make sure you have git installed (automatically skipped if already installed)
