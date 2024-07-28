@@ -3,9 +3,11 @@
 
 # Check for git once
 clear
-echo "Checking for git..."
+echo "Checking for git & cleaning up..."
 sleep 1
 sudo pacman -S --noconfirm --needed git
+rm -rf ~/ripleys-script-hub/package\ list/
+rm -rf ~/ripleys-script-hub/README.md
 echo "Done!"
 sleep 3
 
@@ -20,8 +22,8 @@ main_menu() {
     echo
     echo "Select which to install first."
     echo
-    echo "1. Essential packages via pacman"
-    echo "2. Essential packages via Flatpak"
+    echo "1. Install packages via pacman"
+    echo "2. Install packages via Flatpak"
     echo "3. Clone wallpapers"
     echo "4. Install Starship prompt"
     echo "5. Install yay"
@@ -128,6 +130,7 @@ while :; do
             echo "Done! Restart system and find wallpapers in your Pictures folder!"
             sleep 3
             ;;
+      
         * )
             clear
             echo "Invalid option. Please try again."
