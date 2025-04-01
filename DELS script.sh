@@ -33,7 +33,7 @@ while :; do
       # Install via pacman
         1 )
             clear
-            echo "Installing packages via pacman..."
+            echo "Installing packages via apt..."
             sudo apt update
             sudo apt install steam mangohud
             echo "Packages installed successfully!"
@@ -68,11 +68,5 @@ while :; do
             sudo apt-get install grub-customizer
             sleep 2
             echo "WINE/Winetricks/Grub Customizer installed successfully!"
-
-        * )
-            clear
-            echo "Invalid option. Please try again."
-            sleep 2
-            ;;
     esac
 done
