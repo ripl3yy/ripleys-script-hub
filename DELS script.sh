@@ -15,7 +15,6 @@ main_menu() {
     echo "1. Install packages via apt"
     echo "2. Install packages via Flatpak"
     echo "3. Install WINE/Winetricks"
-    echo "4. Install hyfetch via apt (requires setup, do this last)"
     tput setaf 2
     echo "Type your selection. To exit, just close this window or press Ctrl + C."
     tput sgr0
@@ -64,15 +63,6 @@ while :; do
             sudo apt install --install-recommends winehq-stable winetricks
             sleep 2
             echo "WINE/Winetricks installed successfully!"
-
-     # Install hyfetch
-        4 )
-            clear
-            echo "Installing hyfetch via apt..."
-            sudo apt install hyfetch
-            echo "hyfetch installed successfully!"
-            sleep 3
-            ;;
 
         * )
             clear
