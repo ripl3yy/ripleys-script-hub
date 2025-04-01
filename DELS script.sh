@@ -44,7 +44,7 @@ while :; do
         2 )
             clear
             echo "Installing packages via Flatpak..."
-            flatpak install flathub com.github.tchx84.Flatseal com.heroicgameslauncher.hgl net.davidotek.pupgui2 com.obsproject.Studio com.brave.Browser net.pcsx2.PCSX2 com.bambulab.BambuStudio
+            flatpak install flathub io.missioncenter.MissionCenter com.github.tchx84.Flatseal com.heroicgameslauncher.hgl net.davidotek.pupgui2 com.obsproject.Studio com.brave.Browser net.pcsx2.PCSX2 com.bambulab.BambuStudio
             echo "Flatpaks installed successfully!"
             sleep 3
             ;;
