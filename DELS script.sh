@@ -14,7 +14,7 @@ main_menu() {
     echo
     echo "1. Install packages via apt"
     echo "2. Install packages via Flatpak"
-    echo "3. Install WINE/Winetricks"
+    echo "3. Install WINE/Winetricks/Grub Customizer"
     tput setaf 2
     echo "Type your selection. To exit, just close this window or press Ctrl + C."
     tput sgr0
@@ -49,10 +49,10 @@ while :; do
             sleep 3
             ;;
 
-      # Install WINE/Winetricks
+      # Install WINE/Winetricks/Grub Customizer
         3 )
             clear
-            echo "Installing WINE/Winetricks..."
+            echo "Installing WINE/Winetricks/Grub Customizer..."
             sudo dpkg --add-architecture i386
             sleep 1
             sudo mkdir -pm755 /etc/apt/keyrings
@@ -62,7 +62,12 @@ while :; do
             sudo apt update
             sudo apt install --install-recommends winehq-stable winetricks
             sleep 2
-            echo "WINE/Winetricks installed successfully!"
+            sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+            sleep 1
+            sudo apt-get update
+            sudo apt-get install grub-customizer
+            sleep 2
+            echo "WINE/Winetricks/Grub Customizer installed successfully!"
 
         * )
             clear
